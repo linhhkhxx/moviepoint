@@ -1296,3 +1296,14 @@ hr {
 /*--------------------------------------
 --------- Pre Loader Style END ---------
 ---------------------------------------*/
+
+.movies {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.imgs {
+    height: 382px;
+    object-fit: cover;
+}
