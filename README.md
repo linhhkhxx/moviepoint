@@ -7,4 +7,4 @@
 - Nguyễn Sỹ Quang Huy
 
 ## Link tham khảo:  
-`https://fptplay.vn/` 
+`https://www.cgv.vn` 
