@@ -31,7 +31,7 @@ body {
     line-height: 24px;
     font-size: 14px;
     color: #b6b7b9;
-	background: #13151f;
+	background: #1f2029;
 	font-family: 'Poppins', sans-serif;
     font-weight: 400;
     position: relative;
@@ -664,17 +664,18 @@ hr {
     height: 350px;
 }
 .news-bg-3 {
-	background: url('../img/news/cam.png') no-repeat center / cover;
+	background: url('../img/news/beetlejuice.jpg') no-repeat center / cover;
     height: 350px;
 }
 .news-date {
 	position: absolute;
 	left: 60px;
 	top: 0;
-	background: #f09819; /* Old browsers */
-	background: -moz-linear-gradient(-45deg, #f09819 0%, #ef8128 34%, #ec474c 64%, #eb315a 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, #f09819 0%,#ef8128 34%,#ec474c 64%,#eb315a 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(135deg, #f09819 0%,#ef8128 34%,#ec474c 64%,#eb315a 100%);
+    background: rgb(87,83,74);
+    background: -moz-linear-gradient(27deg, rgba(87,83,74,0.7092086834733893) 89%, rgba(138,122,122,0.6167717086834734) 93%);
+    background: -webkit-linear-gradient(27deg, rgba(87,83,74,0.7092086834733893) 89%, rgba(138,122,122,0.6167717086834734) 93%);
+    background: linear-gradient(27deg, rgba(87,83,74,0.7092086834733893) 89%, rgba(138,122,122,0.6167717086834734) 93%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#57534a",endColorstr="#8a7a7a",GradientType=1);
 	padding: 20px;
 }
 .news-date h2 span {
@@ -777,11 +778,11 @@ hr {
 ------------------------------------*/
 .breadcrumb-area {
     position: relative;
-    background-image: url('../img/breadcrumb.png');
+    background-image: url('../img/banner.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-	padding: 280px 0 200px;
+	padding: 1px 0 200px;
 }
 .breadcrumb-area-content {
 	text-align: center;
