@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Moviepoint - Online Movie,Video and TV Show </title>
+		<title>Moviepoint - Mua vé, Lịch chiếu, Review phim </title>
 		<!-- Favicon Icon -->
 		<link rel="icon" type="image/png" href="assets/img/favcion.png" />
 		<!-- Bootstrap CSS -->
@@ -26,6 +26,35 @@
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
+	 <style>
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+      }
+    </style>
 	</head>
 	<body>
 		<!-- Page loader -->
@@ -39,41 +68,71 @@
 					</div>
 					<div class="header-right">
 						<form action="#">
-							<select>
-								<option value="Movies">Movies</option>
-								<option value="Movies">Movies</option>
-								<option value="Movies">Movies</option>
-							</select>
+							<button>Tìm kiếm</button>
 							<input type="text"/>
 							<button><i class="icofont icofont-search"></i></button>
 						</form>
 						<ul>
-							<li><a href="#">Welcome Guest!</a></li>
-							<li><a class="login-popup" href="#">Login</a></li>
+				
+							<li><a class="login-popup" href="#">Đăng nhập</a></li>
 						</ul>
 					</div>
 					<div class="menu-area">
 						<div class="responsive-menu"></div>
 					    <div class="mainmenu">
                             <ul id="primary-menu">
-                                <li><a class="active" href="index-2.html">Home</a></li>
-                                <li><a href="movies.html">Movies</a></li>
-                                <li><a href="celebrities.html">CelebritiesList</a></li>
-                                <li><a href="top-movies.html">Top Movies</a></li>
-                                <li><a href="blog.html">News</a></li>
-								<li><a href="#">Pages <i class="icofont icofont-simple-down"></i></a>
-									<ul>
-										<li><a href="blog-details.html">Blog Details</a></li>
-										<li><a href="movie-details.html">Movie Details</a></li>
-									</ul>
-								</li>
-                                <li><a class="theme-btn" href="#"><i class="icofont icofont-ticket"></i> Tickets</a></li>
-                            </ul>
-					    </div>
-					</div>
-				</div>
-			</div>
-		</header>
+                                 <li><a class="active" href="index-2.html">Trang chủ</a></li>
+                <li><a href="movies.html">Phim đang chiếu</a></li>
+                <li><a href="celebrities.html">Phim sắp chiếu</a></li>
+                <li>
+                  <a href="top-movies.html"
+                    >Thể loại<i class="icofont icofont-simple-down"></i
+                  ></a>
+
+                  <ul>
+                    <li><a href="#">Phim cổ trang</a></li>
+                    <li><a href="#">Phim võ thuật</a></li>
+                    <li><a href="#">Phim phiêu lưu</a></li>
+                    <li><a href="#">Phim tâm lý</a></li>
+                    <li><a href="#">Phim kinh dị</a></li>
+                    <li><a href="#">Phim hài</a></li>
+                    <li><a href="#">Phim chiến tranh</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="blog.html"
+                    >Quốc gia <i class="icofont icofont-simple-down"></i
+                  ></a>
+                  <ul>
+                    <li><a href="#">Phim Việt Nam</a></li>
+                    <li><a href="#">Phim Trung Quốc</a></li>
+                    <li><a href="#">Phim Thái Lan</a></li>
+                    <li><a href="#">Phim Hàn Quốc</a></li>
+                    <li><a href="#">Phim Hồng Kông</a></li>
+                    <li><a href="#">Phim Ấn Độ</a></li>
+                    <li><a href="#">Phim Âu Mỹ</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"
+                    >Tin tức <i class="icofont icofont-simple-down"></i
+                  ></a>
+                  <ul>
+                    <li><a href="blog-details.html">Ưu đãi</a></li>
+                    <li><a href="movie-details.html">Phim hay tháng</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="theme-btn" href="#"
+                    ><i class="icofont icofont-ticket"></i> Mua vé</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 		<div class="login-area">
 			<div class="login-box">
 				<a href="#"><i class="icofont icofont-close"></i></a>
@@ -932,68 +991,64 @@
 		</section><!-- news section end -->
 		<!-- footer section start -->
 		<footer class="footer">
-			<div class="container">
-				<div class="row">
-                    <div class="col-lg-3 col-sm-6">
-						<div class="widget">
-							<img src="assets/img/logo.png" alt="about" />
-							<p>7th Harley Place, London W1G 8LZ United Kingdom</p>
-							<h6><span>Call us: </span>(+880) 111 222 3456</h6>
-						</div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-						<div class="widget">
-							<h4>Legal</h4>
-							<ul>
-								<li><a href="#">Terms of Use</a></li>
-								<li><a href="#">Privacy Policy</a></li>
-								<li><a href="#">Security</a></li>
-							</ul>
-						</div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-						<div class="widget">
-							<h4>Account</h4>
-							<ul>
-								<li><a href="#">My Account</a></li>
-								<li><a href="#">Watchlist</a></li>
-								<li><a href="#">Collections</a></li>
-								<li><a href="#">User Guide</a></li>
-							</ul>
-						</div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-						<div class="widget">
-							<h4>Newsletter</h4>
-							<p>Subscribe to our newsletter system now to get latest news from us.</p>
-							<form action="#">
-								<input type="text" placeholder="Enter your email.."/>
-								<button>SUBSCRIBE NOW</button>
-							</form>
-						</div>
-                    </div>
-				</div>
-				<hr />
-			</div>
-			<div class="copyright">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6 text-center text-lg-left">
-							<div class="copyright-content">
-								<p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
-							</div>
-						</div>
-						<div class="col-lg-6 text-center text-lg-right">
-							<div class="copyright-content">
-								<a href="#" class="scrollToTop">
-									Back to top<i class="icofont icofont-arrow-up"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer><!-- footer section end -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="widget">
+              <img src="assets/img/logo.png" alt="about" />
+              <p>12, Chùa Bộc, P. Quang Trung, Q. Đống Đa, Tp. Hà Nội</p>
+              <h6><span>Call us: </span>1900 60 60</h6>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="widget">
+              <h4>Về MoviePoint</h4>
+              <ul>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Các gói dịch vụ</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Trung tâm hỗ trợ</a></li>
+                <li><a href="#">Thông tin</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="widget">
+              <h4>Quy định</h4>
+              <ul>
+                <li><a href="#">Điều khoản sử dụng</a></li>
+                <li><a href="#">Chính sách thanh toán</a></li>
+                <li><a href="#">Chính sách bảo mật </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="widget">
+              <h4>Kết nối với chúng tôi</h4>
+              <p>Theo dõi chúng tôi để nhận những thông tin mới nhất.</p>
+              <form action="#">
+                <input type="text" placeholder="Enter your email.." />
+              </form>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 text-center text-lg-left"></div>
+            <div class="col-lg-6 text-center text-lg-right">
+              <div class="copyright-content">
+                <a href="#" class="scrollToTop">
+                  Back to top<i class="icofont icofont-arrow-up"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 		<!-- jquery main JS -->
 		<script src="assets/js/jquery.min.js"></script>
 		<!-- Bootstrap JS -->
