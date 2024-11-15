@@ -1301,9 +1301,11 @@ hr {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 20px;
 }
 
 .imgs {
     height: 382px;
+    width: 305px;
     object-fit: cover;
 }
