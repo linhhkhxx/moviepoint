@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+   
+    <body onload="onLoaderFunc()">
+<div class="colorstyle">
+        <div class="inputForm">
+            <center>
+            <h1>Thông tin đặt vé</h1>
+        </center>
+       
+        <center>
+          Tên*: <input type="text" id="Username" required>
+          Số lượng ghế *: <input type="number" id="Numseats" required>
+          <br/><br/>
+          Khu vực: <select name="city" id="tp" required>
+<option value="An Giang">An Giang</option> <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</option> <option value="Bắc Giang">Bắc Giang</option> <option value="Bắc Kạn">Bắc Kạn</option> <option value="Bạc Liêu">Bạc Liêu</option> <option value="Bắc Ninh">Bắc Ninh</option> <option value="Bến Tre">Bến Tre</option> <option value="Bình Định">Bình Định</option> <option value="Bình Dương">Bình Dương</option> <option value="Bình Phước">Bình Phước</option> <option value="Bình Thuận">Bình Thuận</option> <option value="Cà Mau">Cà Mau</option> <option value="Cần Thơ">Cần Thơ</option> <option value="Cao Bằng">Cao Bằng</option> <option value="Đà Nẵng">Đà Nẵng</option> <option value="Đắk Lắk">Đắk Lắk</option> <option value="Đắk Nông">Đắk Nông</option> <option value="Điện Biên">Điện Biên</option> <option value="Đồng Nai">Đồng Nai</option> <option value="Đồng Tháp">Đồng Tháp</option> <option value="Gia Lai">Gia Lai</option> <option value="Hà Giang">Hà Giang</option> <option value="Hà Nam">Hà Nam</option> <option value="Hà Nội">Hà Nội</option> <option value="Hà Tĩnh">Hà Tĩnh</option> <option value="Hải Dương">Hải Dương</option> <option value="Hải Phòng">Hải Phòng</option> <option value="Hậu Giang">Hậu Giang</option> <option value="Hòa Bình">Hòa Bình</option> <option value="Hưng Yên">Hưng Yên</option> <option value="Khánh Hòa">Khánh Hòa</option> <option value="Kiên Giang">Kiên Giang</option> <option value="Kon Tum">Kon Tum</option> <option value="Lai Châu">Lai Châu</option> <option value="Lâm Đồng">Lâm Đồng</option> <option value="Lạng Sơn">Lạng Sơn</option> <option value="Lào Cai">Lào Cai</option> <option value="Long An">Long An</option> <option value="Nam Định">Nam Định</option> <option value="Nghệ An">Nghệ An</option> <option value="Ninh Bình">Ninh Bình</option> <option value="Ninh Thuận">Ninh Thuận</option> <option value="Phú Thọ">Phú Thọ</option> <option value="Phú Yên">Phú Yên</option> <option value="Quảng Bình">Quảng Bình</option> <option value="Quảng Nam">Quảng Nam</option> <option value="Quảng Ngãi">Quảng Ngãi</option> <option value="Quảng Ninh">Quảng Ninh</option> <option value="Quảng Trị">Quảng Trị</option> <option value="Sóc Trăng">Sóc Trăng</option> <option value="Sơn La">Sơn La</option> <option value="Tây Ninh">Tây Ninh</option> <option value="Thái Bình">Thái Bình</option> <option value="Thái Nguyên">Thái Nguyên</option> <option value="Thanh Hóa">Thanh Hóa</option> <option value="Thừa Thiên Huế">Thừa Thiên Huế</option> <option value="Tiền Giang">Tiền Giang</option> <option value="TP Hồ Chí Minh">TP Hồ Chí Minh</option> <option value="Trà Vinh">Trà Vinh</option> <option value="Tuyên Quang">Tuyên Quang</option> <option value="Vĩnh Long">Vĩnh Long</option> <option value="Vĩnh Phúc">Vĩnh Phúc</option> <option value="Yên Bái">Yên Bái
+          </select>
+          Rạp: <select name="rạp" id="r" required>
+            <option value="BDD">BHD</option>
+            <option value="BETA">BETA</option>
+            <option value="CGV">CGV</option>
+            <option value="LOTTE">LOTTE</option>
+          </select>
+          <BR/><BR/>
+          
+          <button onclick="takeData()">Bắt đầu đặt</button>
+        </center>
+        </div>
+          
+        
+        <div class="seatStructure">
+        <center>
+          
+        <table id="seatsBlock">
+         <p id="notification"></p>
+          <tr>
+            <td colspan="14"><div class="screen">SCREEN</div></td>
+            <td rowspan="20">
+              <div class="smallBox greenBox">Ghế đang chọn</div> <br/>
+              <div class="smallBox redBox">Ghế đã được đặt</div><br/>
+              <div class="smallBox emptyBox">Ghế Đôi</div><br/>
+              <div class="smallBox orangeBox">Ghế Vip</div> <br/>
+              <div class="smallBox blueBox"> Ghế Thường</div> <br/>
+            </td>
+            
+            <br/>
+          </tr>
+          
+          <tr>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td></td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+          
+        <tr>
+            <td>A</td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="A1"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox " value="A2"></td>
+            <td><input type="checkbox" class="seats vipSeatCheckbox" value="A3"></td>
+            <td><input type="checkbox" class="seats vipSeatCheckbox" value="A4"></td>
+            <td><input type="checkbox" class="seats vipSeatCheckbox" value="A5"></td>
+            <td class="seatGap"></td>
+            <td><input type="checkbox" class="seats vipSeatCheckbox" value="A6"></td>
+            <td><input type="checkbox" class="seats vipSeatCheckbox" value="A7"></td>
+            <td><input type="checkbox" class="seats vipSeatCheckbox" value="A8"></td>
+            <td><input type="checkbox" class="seats vipSeatCheckbox" value="A9"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="A10"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="A11"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="A12"></td>
+          </tr>
+          
+          <tr>
+            <td>B</td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="B1"></td>
+            <td><input type="checkbox" class="seats rerservedSeatCheckbox" value="B2"></td>
+            <td><input type="checkbox" class="seats vipSeatCheckbox" value="B3"></td>
+            <td><input type="checkbox" class="seats vipSeatCheckbox" value="B4"></td>
+            <td><input type="checkbox" class="seats vipSeatCheckbox" value="B5"></td>
+            <td></td>
+            <td><input type="checkbox" class="seats rerservedSeatCheckbox" value="B6"></td>
+            <td><input type="checkbox" class="seats rerservedSeatCheckbox" value="B7 "></td>
+            <td><input type="checkbox" class="seats vipSeatCheckbox" value="B8 "></td>
+            <td><input type="checkbox" class="seats vipSeatCheckbox" value="B9 "></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="B10"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="B11"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="B12"></td>
+          </tr>
+          
+          <tr>
+            <td>C</td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="C1"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="C2"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox " value="C3"></td>
+            <td><input type="checkbox" class="seats coupleSeatCheckbox" value="C4"></td>
+            <td><input type="checkbox" class="seats coupleSeatCheckbox" value="C5"></td>
+            <td></td>
+            <td><input type="checkbox" class="seats coupleSeatCheckbox" value="C6"></td>
+            <td><input type="checkbox" class="seats coupleSeatCheckbox" value="C7"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="C8"></td>
+            <td><input type="checkbox" class="seats rerservedSeatCheckbox" value="C9"></td>
+            <td><input type="checkbox" class="seats rerservedSeatCheckbox" value="C10"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="C11"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="C12"></td>
+        </tr>
+          
+        <tr>
+            <td>D</td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="D1 "></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="D2"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="D3"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="D4"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="D5"></td>
+            <td></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="D6"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="D7"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="D8"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="D9"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="D10"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="D11"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="D12"></td>
+        </tr>
+          
+        <tr>
+            <td>E</td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="E1"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="E2"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="E3"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="E4"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="E5"></td>
+            <td></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="E6"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="E7"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="E8"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="E9"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="E10"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="E11"></td>
+            <td><input type="checkbox" class="seats regularSeatCheckbox" value="E12"></td>
+        </tr>
+          
+        
+        </table>
+          
+        <br/><button onclick="updateTextArea()">Xác Nhận</button>
+        </center>
+        </div>
+              
+        <br/><br/>
+        
+        <div class="displayerBoxes">
+        <center>
+          <table class="Displaytable">
+          <tr>
+            <th>Tên</th>
+            <th>Số lượng ghế</th>
+            <th>Ghế</th>
+          </tr>
+          <tr>
+            <td><textarea id="nameDisplay"></textarea></td>
+            <td><textarea id="NumberDisplay"></textarea></td>
+            <td><textarea id="seatsDisplay"></textarea></td>
+          </tr>
+        </table>
+        </center>
+    </div>
+</div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="ticket.js"></script> 
+  </body>
+</html>
