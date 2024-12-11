@@ -1,388 +1,538 @@
 <!DOCTYPE HTML>
 <html lang="zxx">
-	
+
 <head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Moviepoint - Mua vé, Lịch chiếu phim, Review, Giá vé</title>
-		<!-- Favicon Icon -->
-		<link rel="icon" type="image/png" href="assets/img/favcion.png" />
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" media="all" />
-		<!-- Slick nav CSS -->
-		<link rel="stylesheet" type="text/css" href="assets/css/slicknav.min.css" media="all" />
-		<!-- Iconfont CSS -->
-		<link rel="stylesheet" type="text/css" href="assets/css/icofont.css" media="all" />
-		<!-- Owl carousel CSS -->
-		<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
-		<!-- Popup CSS -->
-		<link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
-		<!-- Main style CSS -->
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all" />
-		<!-- Responsive CSS -->
-		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css" media="all" />
-		<!--[if lt IE 9]>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Moviepoint - Mua vé, Lịch chiếu phim, Review, Giá vé</title>
+	<!-- Favicon Icon -->
+	<link rel="icon" type="image/png" href="assets/img/favcion.png" />
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" media="all" />
+	<!-- Slick nav CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/slicknav.min.css" media="all" />
+	<!-- Iconfont CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/icofont.css" media="all" />
+	<!-- Owl carousel CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
+	<!-- Popup CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+	<!-- Main style CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all" />
+	<!-- Responsive CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css" media="all" />
+	<!--[if lt IE 9]>
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
-		
-	</head>
-	<body>
-	   <!-- Page loader -->
-	   <div id="preloader"></div>
-	   <!-- header section start -->
-	   <header class="header">
-		 <div class="container">
-		   <div class="header-area">
-			 <div class="logo">
-			   <a href="index.html"
-				 ><img src="assets/img/logo.png" alt="logo"
-			   /></a>
-			 </div>
-			 <div class="header-right">
-			   <form action="#">
-			
-					<input type="text" placeholder="Tìm kiếm.." />
-				 
-				 <button><i class="icofont icofont-search"></i></button>
-			   </form>
-			   <ul>
-				 <li><a class="login-popup" href="#">Đăng nhập</a></li>
-			   </ul>
-			 </div>
-			 <div class="menu-area">
-			   <div class="responsive-menu"></div>
-			   <div class="mainmenu">
-				 <ul id="primary-menu">
-				   <li><a class="active" href="index.html">Trang chủ</a></li>
-				   <li><a href="movies.html">Phim đang chiếu</a></li>
-				   <li><a href="movies.html">Phim sắp chiếu</a></li>
 
-				   <li>
-					 <a href="#"
-					   >Thể loại<i class="icofont icofont-simple-down"></i
-					 ></a>
-   
-					 <ul>
-					   <li><a href="#">Phim cổ trang</a></li>
-					   <li><a href="#">Phim võ thuật</a></li>
-					   <li><a href="#">Phim phiêu lưu</a></li>
-					   <li><a href="#">Phim tâm lý</a></li>
-					   <li><a href="#">Phim kinh dị</a></li>
-					   <li><a href="#">Phim hài</a></li>
-					   <li><a href="#">Phim chiến tranh</a></li>
-					 </ul>
-				   </li>
-				   <li>
-					 <a href="#"
-					   >Quốc gia <i class="icofont icofont-simple-down"></i
-					 ></a>
-					 <ul>
-					   <li><a href="#">Phim Việt Nam</a></li>
-					   <li><a href="#">Phim Trung Quốc</a></li>
-					   <li><a href="#">Phim Thái Lan</a></li>
-					   <li><a href="#">Phim Hàn Quốc</a></li>
-					   <li><a href="#">Phim Hồng Kông</a></li>
-					   <li><a href="#">Phim Ấn Độ</a></li>
-					   <li><a href="#">Phim Âu Mỹ</a></li>
-					 </ul>
-				   </li>
-				   <li>
-					 <a href="#"
-					   >Góc điện ảnh <i class="icofont icofont-simple-down"></i
-					 ></a>
-					 <ul>
-					   <li><a href="celebrities.html">Diễn viên</a></li>
-					   <li><a href="#">Đạo diễn</a></li>
-					   <li><a href="blog-details.html">Bình luận phim</a></li>
-					   <li><a href="movie-details.html">Blog điện ảnh</a></li>
-					 </ul>
-				   </li>
-				   <li>
-					 <a class="theme-btn" href="#"
-					   ><i class="icofont icofont-ticket" ></i> Mua vé</a>
-					   <!--<a class="icofont icofont-ticket" href="ticket.html"> Mua vé</a>-->
+</head>
 
-				   </li>
-				 </ul>
-			   </div>
-			 </div>
-		   </div>
-		 </div>
-	   </header>
-	   <div class="login-area">
-		 <div class="login-box">
-		   <a href="#"><i class="icofont icofont-close"></i></a>
-		   <h2>Đăng nhập</h2>
-		   <form action="#">
-			 <h6>USERNAME OR EMAIL ADDRESS</h6>
-			 <input type="text" />
-			 <h6>Mật Khẩu</h6>
-			 <input type="text" />
-			 <div class="login-remember">
-			   <input type="checkbox" />
-			   <span>Remember me</span>
-			 </div>
-			 <div class="login-signup">
-			   <span>Đăng ký</span>
+<body>
+	<!-- Page loader -->
+	<div id="preloader"></div>
+	<!-- header section start -->
+	<header class="header">
+		<div class="container">
+			<div class="header-area">
+				<div class="logo">
+					<a href="index.html"><img src="assets/img/logo.png" alt="logo" /></a>
+				</div>
+				<div class="header-right">
+					<form action="#">
+
+						<input type="text" placeholder="Tìm kiếm.." />
+
+						<button><i class="icofont icofont-search"></i></button>
+					</form>
+					<ul>
+						<li><a class="login-popup" href="#">Đăng nhập</a></li>
+					</ul>
+				</div>
+				<div class="menu-area">
+					<div class="responsive-menu"></div>
+					<div class="mainmenu">
+						<ul id="primary-menu">
+							<li><a class="active" href="index.html">Trang chủ</a></li>
+							<li><a href="movies.html">Phim đang chiếu</a></li>
+							<li><a href="movies.html">Phim sắp chiếu</a></li>
+
+							<li>
+								<a href="#">Thể loại<i class="icofont icofont-simple-down"></i></a>
+
+								<ul>
+									<li><a href="#">Phim cổ trang</a></li>
+									<li><a href="#">Phim võ thuật</a></li>
+									<li><a href="#">Phim phiêu lưu</a></li>
+									<li><a href="#">Phim tâm lý</a></li>
+									<li><a href="#">Phim kinh dị</a></li>
+									<li><a href="#">Phim hài</a></li>
+									<li><a href="#">Phim chiến tranh</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Quốc gia <i class="icofont icofont-simple-down"></i></a>
+								<ul>
+									<li><a href="#">Phim Việt Nam</a></li>
+									<li><a href="#">Phim Trung Quốc</a></li>
+									<li><a href="#">Phim Thái Lan</a></li>
+									<li><a href="#">Phim Hàn Quốc</a></li>
+									<li><a href="#">Phim Hồng Kông</a></li>
+									<li><a href="#">Phim Ấn Độ</a></li>
+									<li><a href="#">Phim Âu Mỹ</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Góc điện ảnh <i class="icofont icofont-simple-down"></i></a>
+								<ul>
+									<li><a href="celebrities.html">Diễn viên</a></li>
+									<li><a href="#">Đạo diễn</a></li>
+									<li><a href="blog-details.html">Bình luận phim</a></li>
+									<li><a href="movie-details.html">Blog điện ảnh</a></li>
+								</ul>
+							</li>
+							<li>
+								<a class="theme-btn" href="#"><i class="icofont icofont-ticket"></i> Mua vé</a>
+								<!--<a class="icofont icofont-ticket" href="ticket.html"> Mua vé</a>-->
+
+							</li>
+						</ul>
 					</div>
-					<a href="#" class="theme-btn">Đăng nhập</a>
-					<span>Or Via Social</span>
-					<div class="login-social">
-						<a href="#"><i class="icofont icofont-social-facebook"></i></a>
-						<a href="#"><i class="icofont icofont-social-twitter"></i></a>
-						<a href="#"><i class="icofont icofont-social-linkedin"></i></a>
-						<a href="#"><i class="icofont icofont-social-google-plus"></i></a>
-						<a href="#"><i class="icofont icofont-camera"></i></a>
-					</div>
-				</form>
-				
+				</div>
 			</div>
 		</div>
-		<!--<div class="buy-ticket">
-			<div class="container">
-				<div class="buy-ticket-area">
-					<a href="#"><i class="icofont icofont-close"></i></a>
-					<div class="row">
-						<div class="col-lg-8">
-							<div class="buy-ticket-box">
-								<h4>Mua Vé</h4>
-								<h5>Ghế</h5>
-								<h6>Screen</h6>
-								<div class="ticket-box-table">
-									<table class="ticket-table-seat">
-										<tr>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-										</tr>
-										<tr>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-										</tr>
-										<tr>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-										</tr>
-										<tr>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-										</tr>
-										<tr>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-										</tr>
-									</table>
-									<table>
-										<tr>
-											<td>1</td>
-										</tr>
-										<tr>
-											<td>2</td>
-										</tr>
-										<tr>
-											<td>3</td>
-										</tr>
-										<tr>
-											<td>4</td>
-										</tr>
-										<tr>
-											<td>5</td>
-										</tr>
-									</table>
-									<table class="ticket-table-seat">
-										<tr>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-										</tr>
-										<tr>
-											<td class="active">1</td>
-											<td class="active">1</td>
-											<td class="active">1</td>
-											<td class="active">1</td>
-											<td class="active">1</td>
-											<td class="active">1</td>
-											<td class="active">1</td>
-										</tr>
-										<tr>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-										</tr>
-										<tr>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-										</tr>
-										<tr>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-										</tr>
-									</table>
-									<table>
-										<tr>
-											<td>1</td>
-										</tr>
-										<tr>
-											<td>2</td>
-										</tr>
-										<tr>
-											<td>3</td>
-										</tr>
-										<tr>
-											<td>4</td>
-										</tr>
-										<tr>
-											<td>5</td>
-										</tr>
-									</table>
-									<table class="ticket-table-seat">
-										<tr>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-										</tr>
-										<tr>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-										</tr>
-										<tr>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-										</tr>
-										<tr>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-										</tr>
-										<tr>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-											<td>1</td>
-										</tr>
-									</table>
+	</header>
+	<div class="login-area">
+		<div class="login-box">
+			<a href="#"><i class="icofont icofont-close"></i></a>
+			<h2>Đăng nhập</h2>
+			<form action="#">
+				<h6>USERNAME OR EMAIL ADDRESS</h6>
+				<input type="text" />
+				<h6>Mật Khẩu</h6>
+				<input type="text" />
+				<div class="login-remember">
+					<input type="checkbox" />
+					<span>Remember me</span>
+				</div>
+				<div class="login-signup">
+					<span>Đăng ký</span>
+				</div>
+				<a href="#" class="theme-btn">Đăng nhập</a>
+				<span>Or Via Social</span>
+				<div class="login-social">
+					<a href="#"><i class="icofont icofont-social-facebook"></i></a>
+					<a href="#"><i class="icofont icofont-social-twitter"></i></a>
+					<a href="#"><i class="icofont icofont-social-linkedin"></i></a>
+					<a href="#"><i class="icofont icofont-social-google-plus"></i></a>
+					<a href="#"><i class="icofont icofont-camera"></i></a>
+				</div>
+			</form>
+
+		</div>
+	</div>
+	<div class="buy-ticket">
+		<div class="container">
+			<div class="buy-ticket-area">
+				<a href="#"><i class="icofont icofont-close"></i></a>
+				<div class="row">
+					<div class="col-lg-8">
+						<div class="buy-ticket-box">
+							<h4>Mua Vé</h4>
+							<h5>Ghế</h5>
+							<h6>Screen</h6>
+							<div class="ticket-box-table">
+								<table class="ticket-table-seat">
+									<tr>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+									</tr>
+								</table>
+								<table>
+									<tr>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>2</td>
+									</tr>
+									<tr>
+										<td>3</td>
+									</tr>
+									<tr>
+										<td>4</td>
+									</tr>
+									<tr>
+										<td>5</td>
+									</tr>
+								</table>
+								<table class="ticket-table-seat">
+									<tr>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td class="active">1</td>
+										<td class="active">1</td>
+										<td class="active">1</td>
+										<td class="active">1</td>
+										<td class="active">1</td>
+										<td class="active">1</td>
+										<td class="active">1</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+									</tr>
+								</table>
+								<table>
+									<tr>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>2</td>
+									</tr>
+									<tr>
+										<td>3</td>
+									</tr>
+									<tr>
+										<td>4</td>
+									</tr>
+									<tr>
+										<td>5</td>
+									</tr>
+								</table>
+								<table class="ticket-table-seat">
+									<tr>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+									</tr>
+								</table>
+							</div>
+							<div class="ticket-box-available">
+								<input type="checkbox" />
+								<span>Available</span>
+								<input type="checkbox" checked />
+								<span>Unavailable</span>
+								<input type="checkbox" />
+								<span>Selected</span>
+							</div>
+							<a href="#" class="theme-btn">previous</a>
+							<a href="#" class="theme-btn">Next</a>
+						</div>
+					</div>
+					<div class="col-lg-3 offset-lg-1">
+						<div class="buy-ticket-box mtr-30">
+							<h4>Thông tin của bạn</h4>
+							<ul>
+								<li>
+									<p>Khu Vực</p>
+									<span>HB Cinema Box Corner</span>
+								</li>
+								<li>
+									<p>TIME</p>
+									<span>2018.07.09 20:40</span>
+								</li>
+								<li>
+									<p>Movie name</p>
+									<span>Home Alone</span>
+								</li>
+								<li>
+									<p>Ticket number</p>
+									<span>2 Adults, 2 Children, 2 Seniors</span>
+								</li>
+								<li>
+									<p>Price</p>
+									<span>89$</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> <!--header section end
+		<!-- hero area start-->
+	<section class="hero-area" id="home">
+		<div class="container">
+			<div class="hero-area-slider">
+				<div class="row hero-area-slide">
+					<div class="col-lg-6 col-md-5">
+						<div class="hero-area-content">
+							<img src="assets/img/cuoi-xuyen-bien-gioi.jpg" alt="about" height="721" width="524" />
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-7">
+						<div class="hero-area-content pr-50">
+							<h2>Cười Xuyên Biên Giới</h2>
+							<div class="review">
+								<div class="author-review">
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
 								</div>
-								<div class="ticket-box-available">
-									<input type="checkbox" />
-									<span>Available</span>
-									<input type="checkbox" checked />
-									<span>Unavailable</span>
-									<input type="checkbox" />
-									<span>Selected</span>
+								<h4>180k đánh giá</h4>
+							</div>
+							<p>Hành trình của Jin-bong (Ryu Seung-ryong) - cựu vô địch bắn cung quốc gia, sau khi nghỉ
+								hưu, anh đã trở thành một nhân viên văn phòng bình thường. Đứng trước nguy cơ bị sa
+								thải, Jin-bong phải nhận một nhiệm vụ bất khả thi là bay đến nửa kia của trái đất trong
+								nỗ lực tuyệt vọng để sinh tồn.</p>
+							<h3>Diễn viên:</h3>
+							<div class="slide-cast">
+								<div class="single-slide-cast">
+									<img src="assets/img/cast cười xuyên biên giới 1.jfif" alt="about" />
 								</div>
-								<a href="#" class="theme-btn">previous</a>
-								<a href="#" class="theme-btn">Next</a>
+								<div class="single-slide-cast">
+									<img src="assets/img/cast cười xuyên biên giới 3.jpg" alt="about" />
+								</div>
+								<div class="single-slide-cast">
+									<img src="assets/img/cast cười xuyên biên giới 4.jpeg" alt="about" />
+								</div>
+								<div class="single-slide-cast">
+									<img src="assets/img/Cast cười xuyên biên giới 2.jpg" alt="about" />
+								</div>
+								<div class="single-slide-cast">
+									<img src="assets/img/cast cười xuyên biên giới 5.jfif" alt="about" />
+								</div>
+								<div class="single-slide-cast text-center">
+									5+
+								</div>
+							</div>
+							<div class="slide-trailor">
+								<h3><a href="https://www.youtube.com/watch?v=4ALt4VT7grw"></i> Xem Trailer</a></h3>
+								<a class="theme-btn theme-btn2 theme-btn-show" href="#"><i
+										class="icofont icofont-play"></i> Đặt vé</a>
 							</div>
 						</div>
-						<div class="col-lg-3 offset-lg-1">
-							<div class="buy-ticket-box mtr-30">
-								<h4>Thông tin của bạn</h4>
-								<ul>
-									<li>
-										<p>Khu Vực</p>
-										<span>HB Cinema Box Corner</span>
-									</li>
-									<li>
-										<p>TIME</p>
-										<span>2018.07.09   20:40</span>
-									</li>
-									<li>
-										<p>Movie name</p>
-										<span>Home Alone</span>
-									</li>
-									<li>
-										<p>Ticket number</p>
-										<span>2 Adults, 2 Children, 2 Seniors</span>
-									</li>
-									<li>
-										<p>Price</p>
-										<span>89$</span>
-									</li>
-								</ul>
+					</div>
+				</div>
+				<div class="row hero-area-slide">
+					<div class="col-lg-6 col-md-5">
+						<div class="hero-area-content">
+							<img src="assets/img/handsome-guys.jpg" alt="about" />
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-7">
+						<div class="hero-area-content pr-50">
+							<h2>Đẹp trai thấy sai sai</h2>
+							<div class="review">
+								<div class="author-review">
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+								</div>
+								<h4>20k Đánh giá</h4>
+							</div>
+							<p>Hai người đàn ông thô lỗ nhưng giản dị, tự xưng là 'Những anh chàng đẹp trai'. Họ có ước
+								mơ được sống ở vùng nông thôn và cuối cùng giấc mơ của họ đã thành hiện thực. Tuy nhiên,
+								vào ngày đầu tiên chuyển đến ngôi nhà mới, một bí mật bị phong ấn dưới tầng hầm của họ
+								đã được đánh thức. Từ đây gây ra một loạt những hài kịch khó đỡ.</p>
+							<h3>Diễn viên:</h3>
+							<div class="slide-cast">
+								<div class="single-slide-cast">
+									<img src="assets/img/cast đẹp trai thấy sai sai (1).jpg" alt="about" />
+								</div>
+								<div class="single-slide-cast">
+									<img src="assets/img/cast đẹp trai thấy sai sai (2).jpg" alt="about" />
+								</div>
+								<div class="single-slide-cast">
+									<img src="assets/img/cast đẹp trai thấy sai sai (3).jpg" alt="about" />
+								</div>
+								<div class="single-slide-cast">
+									<img src="assets/img/cast đẹp trai thấy sai sai 2.jfif" alt="about" />
+								</div>
+								<div class="single-slide-cast">
+									<img src="assets/img/cast đẹp trai thấy sai sai 3.jfif" alt="about" />
+								</div>
+								<div class="single-slide-cast text-center">
+									5+
+								</div>
+							</div>
+							<div class="slide-trailor">
+								<h3><a href="https://www.youtube.com/watch?v=qoM5mbkOwMg"></i> Xem Trailer</a></h3>
+								<a class="theme-btn theme-btn2 theme-btn-show" href="#"><i
+										class="icofont icofont-play"></i> Đặt vé</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row hero-area-slide">
+					<div class="col-lg-6 col-md-5">
+						<div class="hero-area-content">
+							<img src="assets/img/vosigiacdau.jpg" alt="about" />
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-7">
+						<div class="hero-area-content pr-50">
+							<h2>Võ Sĩ Giác Đấu II</h2>
+							<div class="review">
+								<div class="author-review">
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+								</div>
+								<h4>35k Đánh giá</h4>
+							</div>
+							<p>Chàng trai Lucius buộc phải vào Đấu trường La Mã, trở thành Gladiator II / Võ Sĩ Giác Đấu
+								II sau khi quê hương bị các bạo chúa cai trị Rome xâm chiếm, anh phải nhìn lại quá khứ
+								để tìm kiếm sức mạnh nhằm mang lại vinh quang cho người dân.</p>
+							<h3>Diễn viên</h3>
+							<div class="slide-cast">
+								<div class="single-slide-cast">
+									<img src="assets/img/cast vsgd 1.jfif" alt="about" />
+								</div>
+								<div class="single-slide-cast">
+									<img src="assets/img/cast vsdg 5.jfif" alt="about" />
+								</div>
+								<div class="single-slide-cast">
+									<img src="assets/img/cast vsgd 2.jfif" alt="about" />
+								</div>
+								<div class="single-slide-cast">
+									<img src="assets/img/cast vsdg 3.jfif" alt="about" />
+								</div>
+								<div class="single-slide-cast">
+									<img src="assets/img/vsgd 4.jfif" alt="about" />
+								</div>
+								<div class="single-slide-cast text-center">
+									5+
+								</div>
+							</div>
+							<div class="slide-trailor">
+								<h3><a href="https://www.youtube.com/watch?v=R4AFSgUGEEs"></i> Xem Trailer</a></h3>
+								<a class="theme-btn theme-btn-show theme-btn2" href="#"><i
+										class="icofont icofont-play"></i> Đặt vé</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div> <!--header section end -->
-		<!-- hero area start-->
-		<section class="hero-area" id="home">
-			<div class="container">
-				<div class="hero-area-slider">
+			<div class="hero-area-thumb">
+				<div class="thumb-prev">
 					<div class="row hero-area-slide">
-						<div class="col-lg-6 col-md-5">
+						<div class="col-lg-6">
 							<div class="hero-area-content">
-								<img src="assets/img/cuoi-xuyen-bien-gioi.jpg" alt="about" height="721" width="524" />
+								<img src="assets/img/handsome-guys.jpg" alt="about" />
 							</div>
 						</div>
-						<div class="col-lg-6 col-md-7">
+						<div class="col-lg-6">
 							<div class="hero-area-content pr-50">
-								<h2>Cười Xuyên Biên Giới</h2>
+								<h2>Võ Sĩ Giác Đấu II </h2>
 								<div class="review">
 									<div class="author-review">
 										<i class="icofont icofont-star"></i>
@@ -391,44 +541,55 @@
 										<i class="icofont icofont-star"></i>
 										<i class="icofont icofont-star"></i>
 									</div>
-									<h4>180k đánh giá</h4>
+									<h4>14k voters</h4>
 								</div>
-								<p>Hành trình của Jin-bong (Ryu Seung-ryong) - cựu vô địch bắn cung quốc gia, sau khi nghỉ hưu, anh đã trở thành một nhân viên văn phòng bình thường. Đứng trước nguy cơ bị sa thải, Jin-bong phải nhận một nhiệm vụ bất khả thi là bay đến nửa kia của trái đất trong nỗ lực tuyệt vọng để sinh tồn.</p>
-								<h3>Diễn viên:</h3>
+								<p>Chàng trai Lucius buộc phải vào Đấu trường La Mã, trở thành Gladiator II / Võ Sĩ Giác
+									Đấu II sau khi quê hương bị các bạo chúa cai trị Rome xâm chiếm, anh phải nhìn lại
+									quá khứ để tìm kiếm sức mạnh nhằm mang lại vinh quang cho người dân.</p>
+								<h3>Cast:</h3>
 								<div class="slide-cast">
 									<div class="single-slide-cast">
-										<img src="assets/img/cast cười xuyên biên giới 1.jfif" alt="about" />
+										<img src="assets/img/cast/cast1.png" alt="about" />
 									</div>
 									<div class="single-slide-cast">
-										<img src="assets/img/cast cười xuyên biên giới 3.jpg" alt="about" />
+										<img src="assets/img/cast/cast2.html" alt="about" />
 									</div>
 									<div class="single-slide-cast">
-										<img src="assets/img/cast cười xuyên biên giới 4.jpeg" alt="about" />
+										<img src="assets/img/cast/cast3.png" alt="about" />
 									</div>
 									<div class="single-slide-cast">
-										<img src="assets/img/Cast cười xuyên biên giới 2.jpg" alt="about" />
+										<img src="assets/img/cast/cast4.png" alt="about" />
 									</div>
 									<div class="single-slide-cast">
-										<img src="assets/img/cast cười xuyên biên giới 5.jfif" alt="about" />
+										<img src="assets/img/cast/cast5.png" alt="about" />
+									</div>
+									<div class="single-slide-cast">
+										<img src="assets/img/cast/cast6.png" alt="about" />
+									</div>
+									<div class="single-slide-cast">
+										<img src="assets/img/cast/cast7.png" alt="about" />
 									</div>
 									<div class="single-slide-cast text-center">
 										5+
 									</div>
 								</div>
 								<div class="slide-trailor">
-									<h3><a href="https://www.youtube.com/watch?v=4ALt4VT7grw"></i> Xem Trailer</a></h3>
-									<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Đặt vé</a>
+									<h3>Xem Trailer</h3>
+									<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i>
+										Tickets</a>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
+				<div class="thumb-next">
 					<div class="row hero-area-slide">
-						<div class="col-lg-6 col-md-5">
+						<div class="col-lg-6">
 							<div class="hero-area-content">
 								<img src="assets/img/handsome-guys.jpg" alt="about" />
 							</div>
 						</div>
-						<div class="col-lg-6 col-md-7">
+						<div class="col-lg-6">
 							<div class="hero-area-content pr-50">
 								<h2>Đẹp trai thấy sai sai</h2>
 								<div class="review">
@@ -439,202 +600,51 @@
 										<i class="icofont icofont-star"></i>
 										<i class="icofont icofont-star"></i>
 									</div>
-									<h4>20k Đánh giá</h4>
+									<h4>180k voters</h4>
 								</div>
-								<p>Hai người đàn ông thô lỗ nhưng giản dị, tự xưng là 'Những anh chàng đẹp trai'. Họ có ước mơ được sống ở vùng nông thôn và cuối cùng giấc mơ của họ đã thành hiện thực. Tuy nhiên, vào ngày đầu tiên chuyển đến ngôi nhà mới, một bí mật bị phong ấn dưới tầng hầm của họ đã được đánh thức. Từ đây gây ra một loạt những hài kịch khó đỡ.</p>
-								<h3>Diễn viên:</h3>
+								<p>Hai người đàn ông thô lỗ nhưng giản dị, tự xưng là 'Những anh chàng đẹp trai'. Họ có
+									ước mơ được sống ở vùng nông thôn và cuối cùng giấc mơ của họ đã thành hiện thực.
+									Tuy nhiên, vào ngày đầu tiên chuyển đến ngôi nhà mới, một bí mật bị phong ấn dưới
+									tầng hầm của họ đã được đánh thức. Từ đây gây ra một loạt những hài kịch khó đỡ.</p>
+								<h3>Cast:</h3>
 								<div class="slide-cast">
 									<div class="single-slide-cast">
-										<img src="assets/img/cast đẹp trai thấy sai sai (1).jpg" alt="about" />
+										<img src="assets/img/cast/cast1.png" alt="about" />
 									</div>
 									<div class="single-slide-cast">
-										<img src="assets/img/cast đẹp trai thấy sai sai (2).jpg" alt="about" />
+										<img src="assets/img/cast/cast2.html" alt="about" />
 									</div>
 									<div class="single-slide-cast">
-										<img src="assets/img/cast đẹp trai thấy sai sai (3).jpg" alt="about" />
+										<img src="assets/img/cast/cast3.png" alt="about" />
 									</div>
 									<div class="single-slide-cast">
-										<img src="assets/img/cast đẹp trai thấy sai sai 2.jfif" alt="about" />
+										<img src="assets/img/cast/cast4.png" alt="about" />
 									</div>
 									<div class="single-slide-cast">
-										<img src="assets/img/cast đẹp trai thấy sai sai 3.jfif" alt="about" />
+										<img src="assets/img/cast/cast5.png" alt="about" />
+									</div>
+									<div class="single-slide-cast">
+										<img src="assets/img/cast/cast6.png" alt="about" />
+									</div>
+									<div class="single-slide-cast">
+										<img src="assets/img/cast/cast7.png" alt="about" />
 									</div>
 									<div class="single-slide-cast text-center">
 										5+
 									</div>
 								</div>
 								<div class="slide-trailor">
-									<h3><a href="https://www.youtube.com/watch?v=qoM5mbkOwMg"></i> Xem Trailer</a></h3>
-									<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Đặt vé</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row hero-area-slide">
-						<div class="col-lg-6 col-md-5">
-							<div class="hero-area-content">
-								<img src="assets/img/vosigiacdau.jpg" alt="about" />
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-7">
-							<div class="hero-area-content pr-50">
-								<h2>Võ Sĩ Giác Đấu II</h2>
-								<div class="review">
-									<div class="author-review">
-										<i class="icofont icofont-star"></i>
-										<i class="icofont icofont-star"></i>
-										<i class="icofont icofont-star"></i>
-										<i class="icofont icofont-star"></i>
-										<i class="icofont icofont-star"></i>
-									</div>
-									<h4>35k Đánh giá</h4>
-								</div>
-								<p>Chàng trai Lucius buộc phải vào Đấu trường La Mã, trở thành Gladiator II / Võ Sĩ Giác Đấu II sau khi quê hương bị các bạo chúa cai trị Rome xâm chiếm, anh phải nhìn lại quá khứ để tìm kiếm sức mạnh nhằm mang lại vinh quang cho người dân.</p>
-								<h3>Diễn viên</h3>
-								<div class="slide-cast">
-									<div class="single-slide-cast">
-										<img src="assets/img/cast vsgd 1.jfif" alt="about" />
-									</div>
-									<div class="single-slide-cast">
-										<img src="assets/img/cast vsdg 5.jfif" alt="about" />
-									</div>
-									<div class="single-slide-cast">
-										<img src="assets/img/cast vsgd 2.jfif" alt="about" />
-									</div>
-									<div class="single-slide-cast">
-										<img src="assets/img/cast vsdg 3.jfif" alt="about" />
-									</div>
-									<div class="single-slide-cast">
-										<img src="assets/img/vsgd 4.jfif" alt="about" />
-									</div>
-									<div class="single-slide-cast text-center">
-										5+
-									</div>
-								</div>
-								<div class="slide-trailor">
-									<h3><a href="https://www.youtube.com/watch?v=R4AFSgUGEEs"></i> Xem Trailer</a></h3>
-									<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Đặt vé</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="hero-area-thumb">
-					<div class="thumb-prev">
-						<div class="row hero-area-slide">
-							<div class="col-lg-6">
-								<div class="hero-area-content">
-									<img src="assets/img/handsome-guys.jpg" alt="about" />
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="hero-area-content pr-50">
-									<h2>Võ Sĩ Giác Đấu II </h2>
-									<div class="review">
-										<div class="author-review">
-											<i class="icofont icofont-star"></i>
-											<i class="icofont icofont-star"></i>
-											<i class="icofont icofont-star"></i>
-											<i class="icofont icofont-star"></i>
-											<i class="icofont icofont-star"></i>
-										</div>
-										<h4>14k voters</h4>
-									</div>
-									<p>Chàng trai Lucius buộc phải vào Đấu trường La Mã, trở thành Gladiator II / Võ Sĩ Giác Đấu II sau khi quê hương bị các bạo chúa cai trị Rome xâm chiếm, anh phải nhìn lại quá khứ để tìm kiếm sức mạnh nhằm mang lại vinh quang cho người dân.</p>
-									<h3>Cast:</h3>
-									<div class="slide-cast">
-										<div class="single-slide-cast">
-											<img src="assets/img/cast/cast1.png" alt="about" />
-										</div>
-										<div class="single-slide-cast">
-											<img src="assets/img/cast/cast2.html" alt="about" />
-										</div>
-										<div class="single-slide-cast">
-											<img src="assets/img/cast/cast3.png" alt="about" />
-										</div>
-										<div class="single-slide-cast">
-											<img src="assets/img/cast/cast4.png" alt="about" />
-										</div>
-										<div class="single-slide-cast">
-											<img src="assets/img/cast/cast5.png" alt="about" />
-										</div>
-										<div class="single-slide-cast">
-											<img src="assets/img/cast/cast6.png" alt="about" />
-										</div>
-										<div class="single-slide-cast">
-											<img src="assets/img/cast/cast7.png" alt="about" />
-										</div>
-										<div class="single-slide-cast text-center">
-											5+
-										</div>
-									</div>
-									<div class="slide-trailor">
-										<h3>Xem Trailer</h3>
-										<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="thumb-next">
-						<div class="row hero-area-slide">
-							<div class="col-lg-6">
-								<div class="hero-area-content">
-									<img src="assets/img/handsome-guys.jpg" alt="about" />
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="hero-area-content pr-50">
-									<h2>Đẹp trai thấy sai sai</h2>
-									<div class="review">
-										<div class="author-review">
-											<i class="icofont icofont-star"></i>
-											<i class="icofont icofont-star"></i>
-											<i class="icofont icofont-star"></i>
-											<i class="icofont icofont-star"></i>
-											<i class="icofont icofont-star"></i>
-										</div>
-										<h4>180k voters</h4>
-									</div>
-									<p>Hai người đàn ông thô lỗ nhưng giản dị, tự xưng là 'Những anh chàng đẹp trai'. Họ có ước mơ được sống ở vùng nông thôn và cuối cùng giấc mơ của họ đã thành hiện thực. Tuy nhiên, vào ngày đầu tiên chuyển đến ngôi nhà mới, một bí mật bị phong ấn dưới tầng hầm của họ đã được đánh thức. Từ đây gây ra một loạt những hài kịch khó đỡ.</p>
-									<h3>Cast:</h3>
-									<div class="slide-cast">
-										<div class="single-slide-cast">
-											<img src="assets/img/cast/cast1.png" alt="about" />
-										</div>
-										<div class="single-slide-cast">
-											<img src="assets/img/cast/cast2.html" alt="about" />
-										</div>
-										<div class="single-slide-cast">
-											<img src="assets/img/cast/cast3.png" alt="about" />
-										</div>
-										<div class="single-slide-cast">
-											<img src="assets/img/cast/cast4.png" alt="about" />
-										</div>
-										<div class="single-slide-cast">
-											<img src="assets/img/cast/cast5.png" alt="about" />
-										</div>
-										<div class="single-slide-cast">
-											<img src="assets/img/cast/cast6.png" alt="about" />
-										</div>
-										<div class="single-slide-cast">
-											<img src="assets/img/cast/cast7.png" alt="about" />
-										</div>
-										<div class="single-slide-cast text-center">
-											5+
-										</div>
-									</div>
-									<div class="slide-trailor">
-										<h3>Watch Trailer</h3>
-										<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
-									</div>
+									<h3>Watch Trailer</h3>
+									<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i>
+										Tickets</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section><!-- hero area end -->
+		</div>
+	</section><!-- hero area end -->
 	<!-- portfolio section start -->
 	<section class="portfolio-area pt-60">
 		<div class="container">
@@ -668,7 +678,8 @@
 									</a>
 								</div>
 								<div class="portfolio-content">
-									<h2 class="movies"><a href="movie-details.html">Chờ Người Nơi Pháo Hoa Rực Rỡ</a></h2>
+									<h2 class="movies"><a href="movie-details.html">Chờ Người Nơi Pháo Hoa Rực Rỡ</a>
+									</h2>
 									<div class="review">
 										<div class="author-review">
 											<i class="icofont icofont-star"></i>
@@ -808,220 +819,222 @@
 			</div>
 		</div>
 	</section><!-- portfolio section end -->
-		<!-- video section start -->
-		<section class="video ptb-90">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-					    <div class="section-title pb-20">
-							<h1><i class="icofont icofont-film"></i> Trailers & Videos</h1>
-						</div>
+	<!-- video section start -->
+	<section class="video ptb-90">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section-title pb-20">
+						<h1><i class="icofont icofont-film"></i> Trailers & Videos</h1>
 					</div>
-				</div>
-				<hr />
-				<div class="row">
-                    <div class="col-md-9">
-						<div class="video-area">
-							<img src="assets/img/video/matmado.jpg" alt="video" width="868" height="425"/>
-							<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
-								<i class="icofont icofont-ui-play"></i>
-							</a>
-							<div class="video-text">
-								<h2>Mật mã đỏ</h2>
-								<div class="review">
-									<div class="author-review">
-										<i class="icofont icofont-star"></i>
-										<i class="icofont icofont-star"></i>
-										<i class="icofont icofont-star"></i>
-										<i class="icofont icofont-star"></i>
-										<i class="icofont icofont-star"></i>
-									</div>
-									<h4>180k voters</h4>
-								</div>
-							</div>
-						</div>
-                    </div>
-                    <div class="col-md-3">
-						<div class="row">
-							<div class="col-md-12 col-sm-6">
-								<div class="video-area">
-									<img src="assets/img/video/linhmieu.jpg" alt="video" width="265" height="190"/>
-									<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
-										<i class="icofont icofont-ui-play"></i>
-									</a>
-								</div>
-							</div>
-							<div class="col-md-12 col-sm-6">
-								<div class="video-area">
-									<img src="assets/img/video/venom.jpg" alt="video" width="265" height="190"/>
-									<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
-										<i class="icofont icofont-ui-play"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-                    </div>
 				</div>
 			</div>
-		</section><!-- video section end -->
-		<!-- news section start -->
-		<section class="news">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-					    <div class="section-title pb-20">
-							<h1><i class="icofont icofont-coffee-cup"></i> Latest News</h1>
+			<hr />
+			<div class="row">
+				<div class="col-md-9">
+					<div class="video-area">
+						<img src="assets/img/video/matmado.jpg" alt="video" width="868" height="425" />
+						<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
+							<i class="icofont icofont-ui-play"></i>
+						</a>
+						<div class="video-text">
+							<h2>Mật mã đỏ</h2>
+							<div class="review">
+								<div class="author-review">
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+									<i class="icofont icofont-star"></i>
+								</div>
+								<h4>180k voters</h4>
+							</div>
 						</div>
 					</div>
 				</div>
-				<hr />
+				<div class="col-md-3">
+					<div class="row">
+						<div class="col-md-12 col-sm-6">
+							<div class="video-area">
+								<img src="assets/img/video/linhmieu.jpg" alt="video" width="265" height="190" />
+								<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
+									<i class="icofont icofont-ui-play"></i>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-12 col-sm-6">
+							<div class="video-area">
+								<img src="assets/img/video/venom.jpg" alt="video" width="265" height="190" />
+								<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
+									<i class="icofont icofont-ui-play"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="news-slide-area">
-				<div class="news-slider">
-					<div class="single-news">
-						<div class="news-bg-1"></div>
-						<div class="news-date">
-							<h2><span>NOV</span> 22</h2>
-							<h1>2024</h1>
-						</div>
-						<div class="news-content">
-							<h2>[Review] Tee Yod 2</h2>
-							<p>Quỷ Ăn Tạng Ám Ảnh Từ Thái Lan Đến Việt Nam</p>
-						</div>
-						<a href="blog-details.html">Đọc thêm</a>
+		</div>
+	</section><!-- video section end -->
+	<!-- news section start -->
+	<section class="news">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section-title pb-20">
+						<h1><i class="icofont icofont-coffee-cup"></i> Latest News</h1>
 					</div>
-					<div class="single-news">
-						<div class="news-bg-2"></div>
-						<div class="news-date">
-							<h2><span>NOV</span> 15</h2>
-							<h1>2024</h1>
-						</div>
-						<div class="news-content">
-							<h2>[Review] Red One</h2>
-							<p>Hành Trình Giải Cứu Giáng Sinh Đầy Vui Nhộn</p>
-						</div>
-						<a href="blog-details_redone.html">Đọc thêm</a>
+				</div>
+			</div>
+			<hr />
+		</div>
+		<div class="news-slide-area">
+			<div class="news-slider">
+				<div class="single-news">
+					<div class="news-bg-1"></div>
+					<div class="news-date">
+						<h2><span>NOV</span> 22</h2>
+						<h1>2024</h1>
 					</div>
+					<div class="news-content">
+						<h2>[Review] Tee Yod 2</h2>
+						<p>Quỷ Ăn Tạng Ám Ảnh Từ Thái Lan Đến Việt Nam</p>
+					</div>
+					<a href="blog-details.html">Đọc thêm</a>
+				</div>
+				<div class="single-news">
+					<div class="news-bg-2"></div>
+					<div class="news-date">
+						<h2><span>NOV</span> 15</h2>
+						<h1>2024</h1>
+					</div>
+					<div class="news-content">
+						<h2>[Review] Red One</h2>
+						<p>Hành Trình Giải Cứu Giáng Sinh Đầy Vui Nhộn</p>
+					</div>
+					<a href="blog-details_redone.html">Đọc thêm</a>
+				</div>
+				<div class="single-news">
+					<div class="news-bg-3"></div>
+					<div class="news-date">
+						<h2><span>NOV</span> 27</h2>
+						<h1>2024</h1>
+					</div>
+					<div class="news-content">
+						<h2>[Review] Beetlejuice 2</h2>
+						<p>Phim Kinh Dị Về Mái Ấm Gia Đình</p>
+					</div>
+					<a href="blog-details_beetlejuice.html">Đọc thêm</a>
+				</div>
+			</div>
+			<div class="news-thumb">
+				<div class="news-next">
 					<div class="single-news">
 						<div class="news-bg-3"></div>
 						<div class="news-date">
-							<h2><span>NOV</span> 27</h2>
+							<h2><span>NOV</span> 25</h2>
 							<h1>2024</h1>
 						</div>
 						<div class="news-content">
-							<h2>[Review] Beetlejuice 2</h2>
-							<p>Phim Kinh Dị Về Mái Ấm Gia Đình</p>
+							<h2>The Witch Queen</h2>
+							<p>Witch Queen is a tall woman with a slim build. She has pink hair, which is pulled up
+								under her hat, and teal eyes.</p>
 						</div>
-						<a href="blog-details_beetlejuice.html">Đọc thêm</a>
+						<a href="#">Read More</a>
 					</div>
 				</div>
-				<div class="news-thumb">
-					<div class="news-next">
-						<div class="single-news">
-							<div class="news-bg-3"></div>
-							<div class="news-date">
-								<h2><span>NOV</span> 25</h2>
-								<h1>2024</h1>
-							</div>
-							<div class="news-content">
-								<h2>The Witch Queen</h2>
-								<p>Witch Queen is a tall woman with a slim build. She has pink hair, which is pulled up under her hat, and teal eyes.</p>
-							</div>
-							<a href="#">Read More</a>
+				<div class="news-prev">
+					<div class="single-news">
+						<div class="news-bg-2"></div>
+						<div class="news-date">
+							<h2><span>NOV</span> 25</h2>
+							<h1>2017</h1>
 						</div>
+						<div class="news-content">
+							<h2>The Witch Queen</h2>
+							<p>Witch Queen is a tall woman with a slim build. She has pink hair, which is pulled up
+								under her hat, and teal eyes.</p>
+						</div>
+						<a href="#">Read More</a>
 					</div>
-					<div class="news-prev">
-						<div class="single-news">
-							<div class="news-bg-2"></div>
-							<div class="news-date">
-								<h2><span>NOV</span> 25</h2>
-								<h1>2017</h1>
-							</div>
-							<div class="news-content">
-								<h2>The Witch Queen</h2>
-								<p>Witch Queen is a tall woman with a slim build. She has pink hair, which is pulled up under her hat, and teal eyes.</p>
-							</div>
-							<a href="#">Read More</a>
+				</div>
+			</div>
+		</div>
+	</section><!-- news section end -->
+	<!-- footer section start -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-sm-6">
+					<div class="widget">
+						<img src="assets/img/logo.png" alt="about" />
+						<p>12, Chùa Bộc, P. Quang Trung, Q. Đống Đa, Tp. Hà Nội</p>
+						<h6><span>Call us: </span>1900 60 60</h6>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="widget">
+						<h4>Về MoviePoint</h4>
+						<ul>
+							<li><a href="#">Giới thiệu</a></li>
+							<li><a href="#">Các gói dịch vụ</a></li>
+							<li><a href="#">Liên hệ</a></li>
+							<li><a href="#">Trung tâm hỗ trợ</a></li>
+							<li><a href="#">Thông tin</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="widget">
+						<h4>Quy định</h4>
+						<ul>
+							<li><a href="#">Điều khoản sử dụng</a></li>
+							<li><a href="#">Chính sách thanh toán</a></li>
+							<li><a href="#">Chính sách bảo mật </a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="widget">
+						<h4>Kết nối với chúng tôi</h4>
+						<p>Theo dõi chúng tôi để nhận những thông tin mới nhất.</p>
+						<form action="#">
+							<input type="text" placeholder="Enter your email.." />
+						</form>
+					</div>
+				</div>
+			</div>
+			<hr />
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 text-center text-lg-left"></div>
+					<div class="col-lg-6 text-center text-lg-right">
+						<div class="copyright-content">
+							<a href="#" class="scrollToTop">
+								Về đầu trang<i class="icofont icofont-arrow-up"></i>
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section><!-- news section end -->
-<!-- footer section start -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-sm-6">
-            <div class="widget">
-              <img src="assets/img/logo.png" alt="about" />
-              <p>12, Chùa Bộc, P. Quang Trung, Q. Đống Đa, Tp. Hà Nội</p>
-              <h6><span>Call us: </span>1900 60 60</h6>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="widget">
-              <h4>Về MoviePoint</h4>
-              <ul>
-                <li><a href="#">Giới thiệu</a></li>
-                <li><a href="#">Các gói dịch vụ</a></li>
-                <li><a href="#">Liên hệ</a></li>
-                <li><a href="#">Trung tâm hỗ trợ</a></li>
-                <li><a href="#">Thông tin</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="widget">
-              <h4>Quy định</h4>
-              <ul>
-                <li><a href="#">Điều khoản sử dụng</a></li>
-                <li><a href="#">Chính sách thanh toán</a></li>
-                <li><a href="#">Chính sách bảo mật </a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="widget">
-              <h4>Kết nối với chúng tôi</h4>
-              <p>Theo dõi chúng tôi để nhận những thông tin mới nhất.</p>
-              <form action="#">
-                <input type="text" placeholder="Enter your email.." />
-              </form>
-            </div>
-          </div>
-        </div>
-        <hr />
-      </div>
-      <div class="copyright">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 text-center text-lg-left"></div>
-            <div class="col-lg-6 text-center text-lg-right">
-              <div class="copyright-content">
-                <a href="#" class="scrollToTop">
-                  Về đầu trang<i class="icofont icofont-arrow-up"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer><!-- footer section end -->
-    <!-- jquery main JS -->
-		<!-- jquery main JS -->
-		<script src="assets/js/jquery.min.js"></script>
-		<!-- Bootstrap JS -->
-		<script src="assets/js/bootstrap.min.js"></script>
-		<!-- Slick nav JS -->
-		<script src="assets/js/jquery.slicknav.min.js"></script>
-		<!-- owl carousel JS -->
-		<script src="assets/js/owl.carousel.min.js"></script>
-		<!-- Popup JS -->
-		<script src="assets/js/jquery.magnific-popup.min.js"></script>
-		<!-- Isotope JS -->
-		<script src="assets/js/isotope.pkgd.min.js"></script>
-		<!-- main JS -->
-		<script src="assets/js/main.js"></script>
-	</body>
+		</div>
+	</footer><!-- footer section end -->
+	<!-- jquery main JS -->
+	<!-- jquery main JS -->
+	<script src="assets/js/jquery.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- Slick nav JS -->
+	<script src="assets/js/jquery.slicknav.min.js"></script>
+	<!-- owl carousel JS -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- Popup JS -->
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- Isotope JS -->
+	<script src="assets/js/isotope.pkgd.min.js"></script>
+	<!-- main JS -->
+	<script src="assets/js/main.js"></script>
+</body>
 
 </html>
