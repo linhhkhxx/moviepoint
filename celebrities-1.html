@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moviepoint - Mua vé, Lịch chiếu phim, Review, Giá vé</title>
+  <!-- Favicon Icon -->
+  <link rel="icon" type="image/png" href="assets/img/favcion.png" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" media="all" />
+  <!-- Slick nav CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/slicknav.min.css" media="all" />
+  <!-- Iconfont CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/icofont.css" media="all" />
+  <!-- Owl carousel CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css" />
+  <!-- Popup CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css" />
+  <!-- Main style CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all" />
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" media="all" />
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <!-- Page loader -->
+  <div id="preloader"></div>
+  <!-- header section start -->
+  <header class="header">
+    <div class="container">
+      <div class="header-area">
+        <div class="logo">
+          <a href="index.html"><img src="assets/img/logo.png" alt="logo" /></a>
+        </div>
+        <div class="header-right">
+          <form action="#">
+            <input type="text" placeholder="Tìm kiếm.." />
+
+            <button><i class="icofont icofont-search"></i></button>
+          </form>
+          <ul>
+            <li><a class="login-popup" href="#">Đăng nhập</a></li>
+          </ul>
+        </div>
+        <div class="menu-area">
+          <div class="responsive-menu"></div>
+          <div class="mainmenu">
+            <ul id="primary-menu">
+              <li><a class="active" href="index.html">Trang chủ</a></li>
+              <li><a href="movies.html">Phim đang chiếu</a></li>
+              <li><a href="movie-details.html">Phim sắp chiếu</a></li>
+              <li>
+                <a href="#">Thể loại<i class="icofont icofont-simple-down"></i></a>
+
+                <ul>
+                  <li><a href="#">Phim cổ trang</a></li>
+                  <li><a href="#">Phim võ thuật</a></li>
+                  <li><a href="#">Phim phiêu lưu</a></li>
+                  <li><a href="#">Phim tâm lý</a></li>
+                  <li><a href="#">Phim kinh dị</a></li>
+                  <li><a href="#">Phim hài</a></li>
+                  <li><a href="#">Phim chiến tranh</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Quốc gia <i class="icofont icofont-simple-down"></i></a>
+                <ul>
+                  <li><a href="#">Phim Việt Nam</a></li>
+                  <li><a href="#">Phim Trung Quốc</a></li>
+                  <li><a href="#">Phim Thái Lan</a></li>
+                  <li><a href="#">Phim Hàn Quốc</a></li>
+                  <li><a href="#">Phim Hồng Kông</a></li>
+                  <li><a href="#">Phim Ấn Độ</a></li>
+                  <li><a href="#">Phim Âu Mỹ</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Góc điện ảnh <i class="icofont icofont-simple-down"></i></a>
+                <ul>
+                  <li><a href="celebrities.html">Diễn viên</a></li>
+                  <li><a href="#">Đạo diễn</a></li>
+                  <li><a href="blog-details.html">Bình luận phim</a></li>
+                  <li><a href="movie-details.html">Blog điện ảnh</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="theme-btn" href="#"><i class="icofont icofont-ticket"></i> Mua vé</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="login-area">
+    <div class="login-box">
+      <a href="#"><i class="icofont icofont-close"></i></a>
+      <h2>Đăng nhập</h2>
+      <form action="#">
+        <h6>USERNAME OR EMAIL ADDRESS</h6>
+        <input type="text" />
+        <h6>Mật Khẩu</h6>
+        <input type="text" />
+        <div class="login-remember">
+          <input type="checkbox" />
+          <span>Remember me</span>
+        </div>
+        <div class="login-signup">
+          <span>Đăng ký</span>
+        </div>
+        <a href="#" class="theme-btn">Đăng nhập</a>
+        <span>Or Via Social</span>
+        <div class="login-social">
+          <a href="#"><i class="icofont icofont-social-facebook"></i></a>
+          <a href="#"><i class="icofont icofont-social-twitter"></i></a>
+          <a href="#"><i class="icofont icofont-social-linkedin"></i></a>
+          <a href="#"><i class="icofont icofont-social-google-plus"></i></a>
+          <a href="#"><i class="icofont icofont-camera"></i></a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="buy-ticket">
+    <div class="container">
+      <div class="buy-ticket-area">
+        <a href="#"><i class="icofont icofont-close"></i></a>
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="buy-ticket-box">
+              <h4>Mua Vé</h4>
+              <h5>Seat</h5>
+              <h6>Screen</h6>
+              <div class="ticket-box-table">
+                <table class="ticket-table-seat">
+                  <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                </table>
+                <table>
+                  <tr>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                  </tr>
+                </table>
+                <table class="ticket-table-seat">
+                  <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td class="active">1</td>
+                    <td class="active">1</td>
+                    <td class="active">1</td>
+                    <td class="active">1</td>
+                    <td class="active">1</td>
+                    <td class="active">1</td>
+                    <td class="active">1</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                </table>
+                <table>
+                  <tr>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                  </tr>
+                </table>
+                <table class="ticket-table-seat">
+                  <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="ticket-box-available">
+                <input type="checkbox" />
+                <span>Available</span>
+                <input type="checkbox" checked />
+                <span>Unavailable</span>
+                <input type="checkbox" />
+                <span>Selected</span>
+              </div>
+              <a href="#" class="theme-btn">previous</a>
+              <a href="#" class="theme-btn">Next</a>
+            </div>
+          </div>
+          <div class="col-lg-3 offset-lg-1">
+            <div class="buy-ticket-box mtr-30">
+              <h4>Your Information</h4>
+              <ul>
+                <li>
+                  <p>Location</p>
+                  <span>HB Cinema Box Corner</span>
+                </li>
+                <li>
+                  <p>TIME</p>
+                  <span>2018.07.09 20:40</span>
+                </li>
+                <li>
+                  <p>Movie name</p>
+                  <span>Home Alone</span>
+                </li>
+                <li>
+                  <p>Ticket number</p>
+                  <span>2 Adults, 2 Children, 2 Seniors</span>
+                </li>
+                <li>
+                  <p>Price</p>
+                  <span>89$</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- header section end -->
+  <!-- breadcrumb area start -->
+  <section class="breadcrumb-area">
+    <div class="container"></div>
+  </section>
+  <!-- breadcrumb area end -->
+  <!-- transformers area start -->
+  <section class="transformers-area">
+    <div class="container">
+      <div class="transformers-box">
+        <div class="row flexbox-center">
+          <div class="col-lg-5 text-lg-left text-center">
+            <div class="transformers-content">
+              <img src="assets/img/celebrities/chris_1.jpg" alt="about" />
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="transformers-content mtr-30">
+              <h2>Chris Evans</h2>
+              <div style="margin: 10px 0;">Khác với Chris Hemsworth vẫn đang loay hoay trong hình tượng vị thần sấm sét,
+                đa số người hâm mộ vẫn
+                nhìn nhận rõ ràng, Chris Evans và Captain America là hai con người hoàn toàn khác nhau.</div>
+              <ul>
+                <li>
+                  <div class="transformers-left">Ngày sinh:</div>
+                  <div class="transformers-right">13/06/1981</div>
+                </li>
+                <li>
+                  <div class="transformers-left">Chiều cao:</div>
+                  <div class="transformers-right">183 cm</div>
+                </li>
+                <li>
+                  <div class="transformers-left">Quốc tịch:</div>
+                  <div class="transformers-right">Mỹ</div>
+                </li>
+                <!-- <li>
+                    <div class="transformers-left">Hair Color:</div>
+                    <div class="transformers-right">Black</div>
+                  </li>
+                  <li>
+                    <div class="transformers-left">Birthday:</div>
+                    <div class="transformers-right">1985.Jun.20</div>
+                  </li>
+                  <li>
+                    <div class="transformers-left">Language:</div>
+                    <div class="transformers-right">English, Russian</div>
+                  </li>
+                  <li>
+                    <div class="transformers-left">Hobby:</div>
+                    <div class="transformers-right">
+                      Base Ball, Gaming, Exploring, Baook Reading
+                    </div>
+                  </li>
+                  <li>
+                    <div class="transformers-left">Follow:</div>
+                    <div class="transformers-right">
+                      <a href="#"><i class="icofont icofont-social-facebook"></i></a>
+                      <a href="#"><i class="icofont icofont-social-twitter"></i></a>
+                      <a href="#"><i class="icofont icofont-social-google-plus"></i></a>
+                      <a href="#"><i class="icofont icofont-youtube-play"></i></a>
+                    </div>
+                  </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- transformers area end -->
+  <!-- details area start -->
+  <section class="details-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="details-content">
+            <div class="details-overview">
+              <h2>Hình ảnh</h2>
+              <div class="row">
+                <div class="col-lg-3">
+                  <img src="assets/img/celebrities/chris_2.jpg" alt="">
+                </div>
+                <div class="col-lg-3">
+                  <img src="assets/img/celebrities/chris_3.jpg" alt="">
+                </div>
+                <div class="col-lg-3">
+                  <img src="assets/img/celebrities/chris_4.jpg" alt="">
+                </div>
+                <div class="col-lg-3">
+                  <img src="assets/img/celebrities/chris_5.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="details-overview">
+              <h2>Tiểu sử</h2>
+              <p>Sinh ngày 13 tháng 6 năm 1981 tại Boston, bang Massachusetts, con đường diễn xuất của cậu bé Chris
+                Evans bắt đầu từ nhỏ với những vở kịch trong trường học. Tình yêu diễn xuất lớn dần theo năm tháng, khi
+                trưởng thành, Evans lắng nghe tiếng gọi con tim, tới New York và thi vào trường nghệ thuật Lee
+                Strasberg.</p>
+              <p class="mt-20">Theo lời khuyên của bạn bè, anh bắt đầu tham gia thử vai một vài phim rồi dần nhận ra đam
+                mê của bản
+                thân là phim trường chứ không phải sân khấu kịch nghệ. Ban đầu con đường sự nghiệp của Chris khá bằng
+                phẳng. Năm 2000, anh xuất hiện lần đầu tiên trên một phim truyền hình của đài CBS. Sau vài vai diễn nhỏ
+                trên các phim kinh phí thấp, Evans bắt đầu xuất hiện trong các dự án lớn hơn.</p>
+              <p class="mt-20">
+                Cuối năm 2001, tên tuổi Chris Evans vụt sáng với vai diễn chàng hotboy trường học trong bộ phim chiếu
+                rạp Not Another Teen Movie. Chiều cao 1m83 cùng khuôn mặt đẹp trai “chuẩn Mỹ” giúp anh nhanh chóng trở
+                thành người tình trong mộng của nhiều cô gái.
+              </p>
+              <p class="mt-20">Năm 2004, một cơ hội khác đến với Evans khi anh tham gia vai chính trong bộ phim đầu tư
+                trung bình The Perfect Score. Đáng tiếc, phim nhận thất bại phòng vé nặng nề. Tuy nhiên, đây là chính là
+                bộ phim “đầu tay” của một trong những tình bạn đẹp nhất Holllywood của “nam thần” Chris Evans với “mỹ
+                nhân màn bạc nóng bỏng” Scarlett Johansson.
+              </p>
+              <p class="mt-20">
+                Sau khi tiếp tục xuất hiện trong vài bộ phim kinh phí thấp với doanh thu không mấy khả quan, vào đầu năm
+                2005, Evans chính thức đổi đời bằng vai diễn Johnny Storm trong Fantastic Four cùng với Jessica Alba và
+                Ioan Gruffudd. Bướng bỉnh, bốc đồng nhưng lại đẹp trai hấp dẫn khó cưỡng, Johnny Storm - Human Torch của
+                Chris Evans nhanh chóng lấy được cảm tình của người hâm mộ, trở thành một gương mặt trẻ sáng giá của
+                Hollywood.
+              </p>
+              <p class="mt-20">
+                Một “thanh niên nghiêm túc” đặt mục tiêu bảo vệ tổ quốc lên hàng đầu, một chiến binh đến từ thế giới cũ
+                - Captain America là một nhân vật hoàn toàn khác với những gì Chris Evan thể hiện trước đó. Evans vào
+                vai Captain ngọt đến mức người xem quên mất anh là chàng trai vui vẻ tăng động ngoài đời thực. Và thành
+                công đạt được thật ngoài sức tưởng tượng. Có thể nói đây là lần thứ hai anh tìm được nhân vật đổi đời.
+                Lần đầu tiên sau nhiều năm, người ta nhớ đến Chris Evans với một cái tên khác Human Torch.
+              </p>
+              <p class="mt-20">
+                Khác với Chris Hemsworth bị cái bóng Thor “ám ảnh” các vai diễn khác và trong cả cuộc sống riêng, đời
+                thật của “Captain America” Chris Evans dễ thở hơn nhiều khi anh gần như là một người hoàn toàn khác
+                Steve Roger. Trái với tính cách chín chắn trầm tĩnh của Captain, con người ngoài đời của Evans có phần
+                giống Human Torch hơn. Anh nhiệt tình vui vẻ, sẵn sàng quậy hết mình trên show và tham gia bất cứ trò
+                điên nào của team Avengers. Cùng với Chris Hemsworth và Chris Patt, anh tạo thành bộ 3 Hot Chris nhà
+                Marvel với điểm chung là khuôn mặt đẹp trai, thân hình chuẩn cùng tính cách vui nổ trời. Ngoài ra, từ
+                sau Captain America: The First Avenger, anh cũng khá thân thiết với các bạn diễn Hayley Atwell và
+                Sebastian Stan.
+              </p>
+            </div>
+          </div>
+
+          <div class="mb-5">
+            <div class="details-thumb">
+              <div class="details-thumb-prev">
+                <div class="thumb-icon">
+                  <i class="icofont icofont-simple-left"></i>
+                </div>
+                <div class="thumb-text">
+                  <a href="celebrities-2.html">
+                    <h4>Bài đăng cũ hơn</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="details-thumb-next">
+                <div class="thumb-text">
+                  <a href="celebrities.html">
+                    <h4>Bài đăng tiếp theo</h4>
+                  </a>
+                </div>
+                <div class="thumb-icon">
+                  <i class="icofont icofont-simple-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 text-center text-lg-left">
+          <div class="portfolio-sidebar">
+            <img src="assets/img/celebrities/backgr_right_1.jpg" alt="sidebar" />
+            <img src="assets/img/celebrities/backgr_right_2.jpg" alt="sidebar" />
+            <img src="assets/img/celebrities/backgr_right_3.jpg" alt="sidebar" />
+          </div>
+        </div>
+
+
+      </div>
+  </section>
+  <!-- details area end -->
+  <!-- footer section start -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6">
+          <div class="widget">
+            <img src="assets/img/logo.png" alt="about" />
+            <p>12, Chùa Bộc, P. Quang Trung, Q. Đống Đa, Tp. Hà Nội</p>
+            <h6><span>Call us: </span>1900 60 60</h6>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="widget">
+            <h4>Về MoviePoint</h4>
+            <ul>
+              <li><a href="#">Giới thiệu</a></li>
+              <li><a href="#">Các gói dịch vụ</a></li>
+              <li><a href="#">Liên hệ</a></li>
+              <li><a href="#">Trung tâm hỗ trợ</a></li>
+              <li><a href="#">Thông tin</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="widget">
+            <h4>Quy định</h4>
+            <ul>
+              <li><a href="#">Điều khoản sử dụng</a></li>
+              <li><a href="#">Chính sách thanh toán</a></li>
+              <li><a href="#">Chính sách bảo mật </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="widget">
+            <h4>Kết nối với chúng tôi</h4>
+            <p>Theo dõi chúng tôi để nhận những thông tin mới nhất.</p>
+            <form action="#">
+              <input type="text" placeholder="Enter your email.." />
+            </form>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-center text-lg-left"></div>
+          <div class="col-lg-6 text-center text-lg-right">
+            <div class="copyright-content">
+              <a href="#" class="scrollToTop">
+                Về đầu trang<i class="icofont icofont-arrow-up"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section end -->
+  <!-- jquery main JS -->
+  <!-- jquery main JS -->
+  <script src="assets/js/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- Slick nav JS -->
+  <script src="assets/js/jquery.slicknav.min.js"></script>
+  <!-- owl carousel JS -->
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <!-- Popup JS -->
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <!-- Isotope JS -->
+  <script src="assets/js/isotope.pkgd.min.js"></script>
+  <!-- main JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
