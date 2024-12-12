@@ -23,7 +23,7 @@
 	}
 	.thumb-next {
 		right: -645px;
-	}
+	}    
 }
 @media only screen and (max-width: 1199px){
 	.thumb-prev,
@@ -144,7 +144,9 @@
 	.news-slider .single-news {
 		max-width: 690px;
 	}
-
+	.dangnhap{
+        padding: 0.3rem 1.2rem;
+    }
 	.header-right {
 		order: -1;
 		grid-column: span 12;
