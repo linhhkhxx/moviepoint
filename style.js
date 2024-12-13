@@ -71,3 +71,9 @@ container.addEventListener("click", (e) => {
 
 // Initial count and total set
 updateSelectedCount();
+function bookTickets() {
+  alert("Bạn đã đặt vé thành công!");
+}
+function goHome() {
+  window.location.href = "index.html";
+} // Điều hướng về trang chủ }
