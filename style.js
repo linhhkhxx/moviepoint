@@ -4,8 +4,6 @@ const count = document.getElementById("count");
 const total = document.getElementById("total");
 const movieSelect = document.getElementById("movie");
 
-populateUI();
-
 let ticketPrice = +movieSelect.value;
 
 // Save selected movie index and price
@@ -68,6 +66,17 @@ container.addEventListener("click", (e) => {
     updateSelectedCount();
   }
 });
+window.onload = function () {
+  // Xóa dữ liệu lưu trữ cục bộ (localStorage)
+  localStorage.clear();
+
+  // Thiết lập lại các trạng thái ban đầu nếu cần
+  const seats = document.querySelectorAll(".row .seat.selected");
+  seats.forEach((seat) => seat.classList.remove("selected"));
+
+  // Cập nhật lại giao diện người dùng
+  updateSelectedCount();
+};
 
 // Initial count and total set
 updateSelectedCount();
