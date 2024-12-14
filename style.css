@@ -78,7 +78,7 @@ body {
 }
 
 .showcase .seat:not(.sold):hover {
-  cursor: default;
+  cursor: pointer;
   transform: scale(1);
 }
 
