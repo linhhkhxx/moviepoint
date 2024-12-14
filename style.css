@@ -135,8 +135,9 @@ p.text span {
 }
 .btn-book:hover,
 .btn-home:hover {
-  background-color: #0056b3;
+  background-color: #ff2c1f;
 }
+
 .buttons {
   display: flex;
   justify-content: center;
@@ -168,9 +169,10 @@ p.text span {
 }
 .date-options input[type="radio"]:checked + label,
 .time-options input[type="radio"]:checked + label {
-  background-color: #007bff;
-  color: #080404;
+  background-color: #ff2c1f;
+  color: #020307;
 }
+
 .date-options label,
 .time-options label {
   cursor: pointer;
