@@ -3,7 +3,7 @@
   border: 2px solid #322f2f;
   border-radius: 10px;
   padding: 20px;
-  background-color: #f2d4d4;
+  background-color: #0c0303;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: fit-content;
   height: fit-content;
@@ -14,7 +14,7 @@
 }
 
 body {
-  background-color: #ebeaec;
+  background-color: #472426;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -176,7 +176,8 @@ p.text span {
 .date-options label,
 .time-options label {
   cursor: pointer;
-  background-color: #000000;
+  background-color: #fffffffc;
+  color: #020307;
   border-radius: 5px;
   padding: 5px 10px;
 }
