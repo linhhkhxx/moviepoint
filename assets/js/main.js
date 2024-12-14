@@ -43,6 +43,11 @@
     $(".login-area").hide();
     return false;
   });
+  //Xử lý sự kiện gửi form
+  $("#login-form").on("Đăng nhập", function (event) {
+    var username = $("#username").val();
+    var password = $("#password").val();
+  });
 
   /*----------------------------
 	START - Slider activation
