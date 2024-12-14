@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   row-gap: 2rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .newsletter h2 {
@@ -80,29 +80,28 @@
 
 @media (max-width: 768px) {
   .newsletter {
-      padding: 0 1rem;
+    padding: 0 1rem;
   }
 
   .newsletter form {
-      flex-direction: column;
-      align-items: stretch;
+    flex-direction: column;
+    align-items: stretch;
   }
 
-  .newsletter form .email, 
+  .newsletter form .email,
   .newsletter .btn {
-      width: 100%;
-      max-width: none;
+    width: 100%;
+    max-width: none;
   }
 
   .social {
-      justify-content: center;
+    justify-content: center;
   }
 
   .social .bx {
-      margin: 5px;
+    margin: 5px;
   }
 }
-
 
 /**
  *** CSS Indexing ***
@@ -125,24 +124,23 @@
 --------- THEME DEFAULT CSS --------
 ----------------------------------*/
 
-
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900");
 /* Some Variables */
-:root{
-  --main-color:#ff2c1f; 
-  --text-color:#020307;
-  --bg-color:#fff ; 
-} 
+:root {
+  --main-color: #ff2c1f;
+  --text-color: #020307;
+  --bg-color: #fff;
+}
 /* Custom Scroll Bar */
-html::-webkit-scrollbar{
+html::-webkit-scrollbar {
   width: 0.5rem;
   background: var(--text-color);
 }
-html::-webkit-scrollbar-thumb{
+html::-webkit-scrollbar-thumb {
   background: var(--main-color);
   border-radius: 5rem;
 }
-body{
+body {
   background: var(--text-color);
   color: var(--bg-color);
   line-height: 24px;
@@ -151,38 +149,50 @@ body{
   font-weight: 400;
   position: relative;
 }
-.dangnhap{
+.dangnhap {
   padding: 0.7rem 1.4rem;
   background: var(--main-color);
   color: var(--bg-color);
   font-weight: 400;
   border-radius: 0.5rem;
 }
-.dangnhap:hover{
+.dangnhap:hover {
   background: #ffffff;
 }
 /*nút đăng nhập màu đỏ
 /*----------------------------
 ---------- RESET CSS ---------
 ----------------------------*/
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 500;
-  color: #fff;}
-h1,h2,h3,h4,h5,h6,p {
+  color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0px;
 }
 p {
   margin: 0px;
   font-size: 14px;
-  font-family: Arial,Helvetica,sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
-    font-size: 34px; 
-    max-width: 968px;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 500;
-    text-transform: uppercase;
+  font-size: 34px;
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 h2 {
   font-size: 30px;
@@ -370,15 +380,12 @@ textarea:focus {
 .theme-btn2 {
   color: #fff;
   background: #ff2c1f; /* Old browsers */
-  background: -moz-linear-gradient(
-    top,#ff2c1f
-  ); /* FF3.6-15 */
+  background: -moz-linear-gradient(top, #ff2c1f); /* FF3.6-15 */
   background: -webkit-linear-gradient(
-    top,#ff2c1f
+    top,
+    #ff2c1f
   ); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to bottom,#ff2c1f
-  );
+  background: linear-gradient(to bottom, #ff2c1f);
   border: none;
 }
 .flexbox-center {
