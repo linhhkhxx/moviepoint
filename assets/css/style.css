@@ -159,6 +159,15 @@ body {
 .dangnhap:hover {
   background: #ffffff;
 }
+.cart-icon {
+  margin-right: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 24px; /* Điều chỉnh kích thước biểu tượng giỏ hàng */
+}
+.cart-icon:hover {
+  transform: scale(1.5); /* Tăng kích thước khi hover */
+}
 /*nút đăng nhập màu đỏ
 /*----------------------------
 ---------- RESET CSS ---------
