@@ -104,12 +104,13 @@ body {
 
 .row {
   display: flex;
+  justify-content: center;
 }
 
 .screen {
   background-color: #fff;
   height: 50px;
-  width: 100%;
+  width: 570px;
   margin: 15px 0;
   transform: rotateX(-48deg);
   box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
@@ -162,6 +163,7 @@ p.text span {
 .time-options {
   display: flex;
   gap: 10px; /* Tạo khoảng cách giữa các tùy chọn */
+  justify-content: center;
 }
 .date-options input[type="radio"],
 .time-options input[type="radio"] {
