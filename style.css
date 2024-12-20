@@ -187,3 +187,14 @@ p.text span {
 .time-container {
   margin: 10px 0;
 } /* Khoảng cách giữa các container */
+.payment-logos {
+  margin-top: 10px;
+}
+.payment-logos img {
+  width: 50px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.payment-logos img:hover {
+  transform: scale(1.2);
+}
