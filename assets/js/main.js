@@ -8,6 +8,7 @@
     allowParentLinks: true,
     prependTo: ".responsive-menu",
   });
+  // script.js
 
   /*----------------------------
 	START - Scroll to Top

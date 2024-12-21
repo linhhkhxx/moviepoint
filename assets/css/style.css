@@ -495,10 +495,11 @@ input::-webkit-input-placeholder {
   transform: scaleY(0);
   transition: all 0.4s;
 }
-.mainmenu li a.active,
+
 .mainmenu li a:hover {
-  color: #ff2c1f;
+  color: #cc4646;
 }
+
 .header-right form {
   display: flex;
   max-width: 380px;
