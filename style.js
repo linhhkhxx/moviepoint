@@ -79,9 +79,25 @@ window.onload = function () {
 };
 
 // Initial count and total set
-updateSelectedCount();
 function bookTickets() {
-  alert("Bạn đã đặt vé thành công!");
+  const movieSelect = document.getElementById("movie");
+  const cinemaSelect = document.getElementById("cinema");
+  const dateOptions = document.getElementsByName("date");
+  const timeOptions = document.getElementsByName("time");
+  const selectedSeats = document.querySelectorAll(".row .seat.selected");
+  const selectedDate = [...dateOptions].find((option) => option.checked);
+  const selectedTime = [...timeOptions].find((option) => option.checked);
+  if (
+    !movieSelect.value ||
+    !cinemaSelect.value ||
+    !selectedDate ||
+    !selectedTime ||
+    selectedSeats.length === 0
+  ) {
+    alert("Vui lòng chọn đầy đủ thông tin");
+    return;
+  }
+  alert("Đặt vé thành công!");
 }
 function goHome() {
   window.location.href = "index.html";
