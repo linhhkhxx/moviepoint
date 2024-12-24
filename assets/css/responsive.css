@@ -407,3 +407,80 @@
     margin-left: 1px;
   }
 }
+@media only screen and (max-width: 420px) {
+  /* Adjust news background images for smaller screens */
+  .news-bg-1,
+  .news-bg-2,
+  .news-bg-3 {
+    height: 250px; /* Reduce height for smaller screens */
+  }
+
+  /* Adjust content titles for small screens */
+  .news-content h2 {
+    font-size: 18px;
+  }
+
+  .hero-area-content h2 {
+    font-size: 22px;
+  }
+
+  /* Reduce size of logos */
+  .logo {
+    grid-column: span 8;
+  }
+
+  .menu-area {
+    grid-column: span 4;
+  }
+
+  /* Adjust the header-right form for mobile layout */
+  .header-right form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  /* Adjust hero area content for small screens */
+  .hero-area-content .author-review {
+    float: none;
+    text-align: center;
+  }
+
+  /* Adjust sizes of the buttons and icons for mobile */
+  .login-social a i {
+    width: 38px;
+    height: 38px;
+    font-size: 16px; /* Reduce size for mobile */
+    line-height: 38px;
+  }
+
+  .details-author a {
+    margin-left: 5px;
+  }
+
+  .details-thumb {
+    display: none;
+  }
+
+  /* Transformers content */
+  .transformers-box {
+    padding: 5px 10px; /* Adjust padding for mobile */
+  }
+
+  .transformers-content h2 {
+    font-size: 20px; /* Adjust font size */
+  }
+
+  .portfolio-menu {
+    padding-top: 0;
+  }
+
+  .portfolio-menu li {
+    padding: 10px 0; /* Reduce padding for mobile */
+    margin: 0 5px 0;
+  }
+
+  .slicknav_nav a {
+    font-size: 14px; /* Adjust text size in the menu */
+  }
+}
