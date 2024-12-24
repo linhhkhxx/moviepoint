@@ -284,6 +284,8 @@ p.text span {
   select,
   input[type="radio"] + label {
     font-size: 12px;
+    width: 100%;
+    max-width: 100%;
   }
   .screen {
     height: 25px;
